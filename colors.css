@@ -1,0 +1,7 @@
+:root {
+  --main-color: #7F1E18;
+}
+
+.inline-title {
+  color: var(--main-color);
+}/*# sourceMappingURL=colors.css.map */
