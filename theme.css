@@ -1,9 +1,19 @@
 :root {
-  --main-color: #7F1E18;
+  --txt-main: #7F1E18;
+  --bg-main: black;
+}
+
+/*main text area*/
+.cm-scroller, .is-focused .workspace-leaf.mod-active .view-header, .workspace-tab-header.is-active.mod-active {
+  background-color: var(--bg-main);
+}
+
+.view-header-title-container.mod-at-start.mod-fade::after {
+  background: none;
 }
 
 .inline-title {
-  color: var(--main-color);
+  color: var(--txt-main);
 }
 
 /* default styling */
