@@ -1,19 +1,22 @@
 :root {
-  --txt-head-main: #7F1E18;
   --bg-main: black;
 }
 
 body {
-  --h1-color: rgb(127, 30, 24);
-  --h2-color: rgb(127, 30, 24, .96);
-  --h3-color: rgb(127, 30, 24, 0.92);
-  --h4-color: rgb(127, 30, 24, 0.88);
-  --h5-color: rgb(127, 30, 24, 0.84);
-  --h6-color: rgb(127, 30, 24, 0.8);
+  --tab-container-background: #1c1c1c;
+  --inline-title-color: var(--h1-color);
+  --h1-color: #98251d;
+  --h2-color: #9a601b;
+  --h3-color: #ad981c;
+  --h4-color: #427514;
+  --h5-color: #2d4d9a;
+  --h6-color: #682d9a;
+  --tag-background: rgb(199, 84, 166, .3);
+  --tag-color: #c754a6;
 }
 
 /*main text area*/
-.cm-scroller, .is-focused .workspace-leaf.mod-active .view-header, .workspace-tab-header.is-active.mod-active, .markdown-preview-view.markdown-rendered.node-insert-event.is-readable-line-width.allow-fold-headings.allow-fold-lists.show-indentation-guide.show-properties {
+.empty-state, .cm-scroller, .is-focused .workspace-leaf.mod-active .view-header, .workspace-tab-header.is-active.mod-active, .markdown-preview-view.markdown-rendered.node-insert-event.is-readable-line-width.allow-fold-headings.allow-fold-lists.show-indentation-guide.show-properties {
   background-color: var(--bg-main);
 }
 
@@ -21,8 +24,13 @@ body {
   background: none;
 }
 
-.inline-title {
-  color: var(--txt-head-main);
+.workspace-tab-header.is-active {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.HyperMD-header {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* default styling */
@@ -59,8 +67,4 @@ svg * {
 
 .menu-separator {
   margin: var(--size-2-1) calc(var(--size-2-1) * -1);
-}
-
-.workspace-tab-header.is-active {
-  border-radius: 10px 10px 0px 0px;
 }/*# sourceMappingURL=theme.css.map */

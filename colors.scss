@@ -1,7 +1,34 @@
 :root {
-    --main-color: #7F1E18;
+    // --txt-head-main: #98251d;
+    --bg-main: black;
 }
 
-.inline-title {
-    color: var(--main-color);
+body {
+    --tab-container-background: #1c1c1c;
+
+    --inline-title-color: var(--h1-color);
+    --h1-color: #98251d;
+    --h2-color: #9a601b;
+    --h3-color: #ad981c;
+    --h4-color: #427514;
+    --h5-color: #2d4d9a;
+    --h6-color: #682d9a;
+
+    --tag-background: rgb(199, 84, 166, .3);
+    --tag-color: #c754a6;
+
 }
+
+/*main text area*/
+
+.empty-state, .cm-scroller, .is-focused .workspace-leaf.mod-active .view-header, .workspace-tab-header.is-active.mod-active, .markdown-preview-view.markdown-rendered.node-insert-event.is-readable-line-width.allow-fold-headings.allow-fold-lists.show-indentation-guide.show-properties {
+    background-color: var(--bg-main);
+}
+
+.view-header-title-container.mod-at-start.mod-fade::after {
+    background: none;
+}
+
+// .inline-title {
+//     color: var(--txt-head-main);
+// }
